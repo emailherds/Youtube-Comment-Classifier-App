@@ -6,47 +6,26 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-    Card,
-    CardContent,
-    CardHeader,
-    CardTitle,
-    CardDescription,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Alert, AlertDescription } from "@/components/ui/alert";
 import { MessageCircle, ThumbsUp, AlertCircle, User } from "lucide-react";
+import ErrorAlert from "@/components/ErrorAlert";
 
 export default function Comments() {
     const { comments, videoData, error } = useComments();
 
     if (error) {
-        return (
-            <Alert variant="destructive">
-                <AlertCircle className="h-4 w-4" />
-                <AlertDescription>Error: {error}</AlertDescription>
-            </Alert>
-        );
+        return <ErrorAlert error={error} />;
     }
 
     if (!videoData) {
-        return (
-            <Alert>
-                <AlertCircle className="h-4 w-4" />
-                <AlertDescription>No video selected</AlertDescription>
-            </Alert>
-        );
+        return <ErrorAlert error="No video selected" />;
     }
 
     if (comments.length === 0) {
-        return (
-            <Alert>
-                <AlertCircle className="h-4 w-4" />
-                <AlertDescription>No comments found</AlertDescription>
-            </Alert>
-        );
+        return <ErrorAlert error="No comments found" />;
     }
 
     // Function to get badge variant based on sentiment
@@ -74,27 +53,21 @@ export default function Comments() {
     };
 
     return (
-        <div className="container mx-auto py-6 space-y-8 w-[75vw]">
-            <Card>
-                <CardHeader>
-                    <CardTitle className="text-2xl">
-                        {videoData.video_title}
-                    </CardTitle>
-                    <CardDescription className="text-lg">
-                        Channel: {videoData.channel}
-                    </CardDescription>
-                </CardHeader>
-            </Card>
+        <div className="container mx-auto py-6 w-[70vw] mt-8">
+            <h1 className="font-[600] text-3xl mb-2">
+                {videoData.video_title}
+            </h1>
+            <h2 className="my-4 font-[400]"> By: {videoData.channel}</h2>
 
             <Accordion type="single" collapsible className="w-full">
                 {comments.map((comment) => (
                     <AccordionItem
                         key={comment.comment_id}
                         value={`comment-${comment.comment_id}`}
-                        className="mt-5"
+                        className=""
                     >
-                        <AccordionTrigger className="px-4">
-                            <div className="flex items-center space-x-4 text-left">
+                        <AccordionTrigger className="px-4 w-full">
+                            <div className="flex items-center text-left justify-between w-full my-4">
                                 <Avatar className="h-8 w-8">
                                     <AvatarImage
                                         src={comment.comment_author_icon}
@@ -104,11 +77,11 @@ export default function Comments() {
                                         <User className="h-4 w-4" />
                                     </AvatarFallback>
                                 </Avatar>
-                                <div className="flex-1 overflow-hidden">
+                                <div className="ml-4 flex-1 overflow-hidden w-80">
                                     <p className="font-medium truncate">
                                         {comment.comment_author}
                                     </p>
-                                    <p className="text-sm text-muted-foreground truncate max-w-md">
+                                    <p className="text-[14px] font-[400] text-muted-foreground truncate max-w-[95%]">
                                         {comment.comment}
                                     </p>
                                 </div>
@@ -116,7 +89,7 @@ export default function Comments() {
                                     variant={getSentimentVariant(
                                         comment.classification.best_label
                                     )}
-                                    className="ml-2 flex items-center"
+                                    className="mr-4 flex items-center justify-center"
                                 >
                                     {getSentimentIcon(
                                         comment.classification.best_label

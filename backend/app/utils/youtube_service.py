@@ -11,10 +11,10 @@ from dotenv import load_dotenv
 load_dotenv()
 API_KEY = os.getenv("YOUTUBE_API_KEY")
 
-def get_youtube_comments(video_url, max_results=20):
+def get_youtube_comments(video_url, max_results=30):
     #regular expression to find the video id from url
     try:
-        matches = re.findall("(?<=v=)[a-zA-Z0-9]+(?=&|$)", video_url)
+        matches = re.findall("(?<=v=)[a-zA-Z0-9\_-]+(?=&|$)", video_url)
         if not matches:
             raise ValueError("Video ID not found in URL.")
         video_id = matches[0]

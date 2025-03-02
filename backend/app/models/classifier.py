@@ -34,7 +34,7 @@ def classify_comment(comment_text, max_length=250):
     }
 
     # Best label shows the class that describes the best:
-    best_label_index = np.argmax(prediction) if np.max(prediction) > 0.8 else 6
+    best_label_index = np.argmax(prediction) if np.max(prediction) > 0.5 else 6
     best_label = classes[best_label_index]
 
     return {

@@ -33,7 +33,7 @@ def classify_video():
         return jsonify({"status":"error", "data": {"error": "No video_id provided"}}), 400
 
     # Fetch comments from the YouTube API
-    yt_response = get_youtube_comments(url, max_results=20)
+    yt_response = get_youtube_comments(url, 30)
     
     # Check if error in fetching comments from api
     if isinstance(yt_response, dict) and "error" in yt_response:

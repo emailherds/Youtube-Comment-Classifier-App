@@ -28,11 +28,11 @@ function App() {
             <ContextLogger />
             <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
                 <Router>
-                    <div className="m-auto mt-8 mb-8 relative flex items-center justify-center w-[75vw]">
+                    <div className="m-auto mt-8 mb-8 relative flex items-center justify-center w-[70vw]">
                         {" "}
                         <Link
                             to="/"
-                            className="absolute left-8 flex-row space-x-3 flex items-center"
+                            className="absolute left-0 flex-row space-x-3 flex items-center"
                         >
                             <MessageCircle />
                             <h1 className="text font-semibold text-foreground/90 text-center">
@@ -42,7 +42,7 @@ function App() {
                         {/* Centered Navbar */}
                         <Navbar />
                         {/* Absolutely positioned ModeToggle on the right */}
-                        <div className="absolute right-8">
+                        <div className="absolute right-0">
                             <ModeToggle />
                         </div>
                     </div>
