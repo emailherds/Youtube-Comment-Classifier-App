@@ -59,6 +59,7 @@ def classify_video():
         "video_id": url,
         "video_title": yt_response["video_title"],
         "channel": yt_response["channel"],
+        "thumbnail": yt_response["thumbnail"],
         "commentsList": commentsList
     }
 

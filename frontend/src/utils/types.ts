@@ -18,5 +18,5 @@ export interface VideoMetadata {
     video_id: string;
     video_title: string;
     channel: string;
-    thumbnail_url?: string;
+    thumbnail?: string;
 }

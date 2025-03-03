@@ -48,6 +48,16 @@ def get_youtube_comments(video_url, max_results=30):
         video_snippet = video_response["items"][0]["snippet"]
         video_data["video_title"] = video_snippet["title"]
         video_data["channel"] = video_snippet["channelTitle"]
+        
+        thumbnails = video_snippet.get("thumbnails", {})
+        if "maxres" in thumbnails:
+            video_data["thumbnail"] = thumbnails["maxres"]["url"]
+        elif "high" in thumbnails:
+            video_data["thumbnail"] = thumbnails["high"]["url"]
+        elif "medium" in thumbnails:
+            video_data["thumbnail"] = thumbnails["medium"]["url"]
+        elif "default" in thumbnails:
+            video_data["thumbnail"] = thumbnails["default"]["url"]
     except Exception as e:
         return {"error": "Unable to retrieve video information from youtube api."}
     

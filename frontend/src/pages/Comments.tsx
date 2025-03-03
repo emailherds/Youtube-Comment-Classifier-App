@@ -53,11 +53,24 @@ export default function Comments() {
     };
 
     return (
-        <div className="container mx-auto py-6 w-[70vw] mt-8">
-            <h1 className="font-[600] text-3xl mb-2">
-                {videoData.video_title}
-            </h1>
-            <h2 className="my-4 font-[400]"> By: {videoData.channel}</h2>
+        <div className="container mx-auto py-6 w-[60vw] mt-8">
+            <div className="h-20 flex-row mt-4 mb-8">
+                {" "}
+                <img
+                    src={videoData.thumbnail}
+                    className="h-full rounded-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] border border-gray-900"
+                />
+                <div className="flex-col ml-6">
+                    {" "}
+                    <h1 className="font-[600] text-3xl ">
+                        {videoData.video_title}
+                    </h1>
+                    <h2 className="my-2 font-[400]">
+                        {" "}
+                        By: {videoData.channel}
+                    </h2>
+                </div>
+            </div>
 
             <Accordion type="single" collapsible className="w-full">
                 {comments.map((comment) => (
