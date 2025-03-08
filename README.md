@@ -1,6 +1,5 @@
 # YouTube Comment Classifier
 
-![YouTube Comment Classifier]
 
 A full-stack application that analyzes YouTube comments using machine learning to classify sentiment and provide insights for content creators.
 
