@@ -65,7 +65,8 @@ export default function About() {
                             <BarChart className="h-8 w-8 text-blue-500 mb-2" />
                             <h3 className="font-medium mb-1">Visualization</h3>
                             <p className="text-sm text-muted-foreground">
-                                Presents results through an intuitive interface
+                                Presents classification results through an
+                                intuitive interface
                             </p>
                         </div>
                     </div>
@@ -108,7 +109,13 @@ export default function About() {
                             <div className="flex flex-wrap gap-2 mt-2">
                                 <Badge>Positive</Badge>
                                 <Badge variant="destructive">Toxic</Badge>
+                                <Badge variant="secondary">Obscene</Badge>
+                                <Badge variant="default">Insult</Badge>
+                                <Badge variant="destructive">
+                                    Identity Hate
+                                </Badge>
                                 <Badge variant="secondary">Threat</Badge>
+                                <Badge variant="default">Severe Toxic</Badge>
                             </div>
                         </div>
                     </div>

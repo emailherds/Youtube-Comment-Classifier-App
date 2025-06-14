@@ -54,7 +54,7 @@ export default function Comments() {
 
     return (
         <div className="container mx-auto py-6 w-[60vw] mt-8">
-            <div className="h-20 flex-row mt-4 mb-8">
+            <div className="h-20 flex flex-row mt-4 mb-8">
                 {" "}
                 <img
                     src={videoData.thumbnail}
