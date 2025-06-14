@@ -3,6 +3,20 @@
 
 A full-stack application that analyzes YouTube comments using machine learning to classify sentiment and provide insights for content creators.
 
+## Table of Contents
+
+- [Demo](#demo)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [License](#license)
+
 ## 🚀 Features
 
 - **Comment Analysis**: Automatically fetch and analyze comments from any YouTube video
