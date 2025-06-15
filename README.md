@@ -11,7 +11,6 @@ A full-stack application that analyzes YouTube comments using machine learning t
 
 ## Table of Contents
 
-- [Demo](#demo)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Screenshots](#screenshots)
@@ -19,7 +18,7 @@ A full-stack application that analyzes YouTube comments using machine learning t
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
 
-## 🚀 Features
+## Features 🚀
 
 - **Comment Analysis**: Automatically fetch and analyze comments from any YouTube video
 - **Sentiment Classification**: Categorizes comments using an LSTM neural network model
@@ -27,7 +26,7 @@ A full-stack application that analyzes YouTube comments using machine learning t
 - **Probability Visualization**: See the confidence levels of each classification
 - **User-Friendly Interface**: Clean, responsive design built with React and Shadcn UI
 
-## 🛠️ Tech Stack
+## Tech Stack 🛠️ 
 
 ### Frontend
 - React + TypeScript
@@ -42,7 +41,7 @@ A full-stack application that analyzes YouTube comments using machine learning t
 - YouTube Data API
 - TensorFlow/Keras (LSTM model, found in my github!)
 
-## 📋 How It Works
+## How It Works 📋
 
 1. **Input**: User provides a YouTube video URL
 2. **Data Collection**: Backend fetches video metadata and comments via YouTube API
@@ -51,10 +50,10 @@ A full-stack application that analyzes YouTube comments using machine learning t
 
 ## Screenshots
 <div>
-      <img src="images/classifier_1.png" alt="Logo" width="600" height="400">
-    <img src="images/classifier_2.png" alt="Logo" width="600" height="400">
-    <img src="images/classifier_3.png" alt="Logo" width="600" height="400">
-    <img src="images/classifier_4.png" alt="Logo" width="600" height="400">
+      <img src="images/classifier_1.png" alt="Logo" width="700" height="400">
+    <img src="images/classifier_2.png" alt="Logo" width="700" height="400">
+    <img src="images/classifier_3.png" alt="Logo" width="700" height="400">
+    <img src="images/classifier_4.png" alt="Logo" width="700" height="400">
 
 </div>
 
