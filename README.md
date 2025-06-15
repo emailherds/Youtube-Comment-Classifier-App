@@ -1,6 +1,9 @@
 <div align="center" id="user-content-toc">
-  <h2 align="center">Youtube Comment Classifier</h2>
-    <br />
+    <ul align="center" style="list-style: none;">
+      <summary>
+      <h2 align="center">Youtube Comment Classifier</h2>
+      </summary>
+  </ul>
   
   <a href="(https://github.com/emailherds/Youtube-Comment-Classifier-App)">
     <img src="images/Youtube_logo.png" alt="Logo" width="150" height="100">
