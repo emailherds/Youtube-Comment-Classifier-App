@@ -1,5 +1,5 @@
-<div align="center">
-  <h2 align="center" id="user-content">Youtube Comment Classifier</h2>
+<div align="center" id="user-content-toc">
+  <h2 align="center">Youtube Comment Classifier</h2>
     <br />
   
   <a href="(https://github.com/emailherds/Youtube-Comment-Classifier-App)">
