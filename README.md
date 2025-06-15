@@ -13,12 +13,11 @@ A full-stack application that analyzes YouTube comments using machine learning t
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
+- [How it works](#how-it-works)
 - [Screenshots](#screenshots)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
+- [Installation and Setup](#Installation and Setup)
 
-## Features 🚀
+## Features
 
 - **Comment Analysis**: Automatically fetch and analyze comments from any YouTube video
 - **Sentiment Classification**: Categorizes comments using an LSTM neural network model
@@ -26,7 +25,7 @@ A full-stack application that analyzes YouTube comments using machine learning t
 - **Probability Visualization**: See the confidence levels of each classification
 - **User-Friendly Interface**: Clean, responsive design built with React and Shadcn UI
 
-## Tech Stack 🛠️ 
+## Tech Stack
 
 ### Frontend
 - React + TypeScript
@@ -41,7 +40,7 @@ A full-stack application that analyzes YouTube comments using machine learning t
 - YouTube Data API
 - TensorFlow/Keras (LSTM model, found in my github!)
 
-## How It Works 📋
+## How It Works
 
 1. **Input**: User provides a YouTube video URL
 2. **Data Collection**: Backend fetches video metadata and comments via YouTube API
