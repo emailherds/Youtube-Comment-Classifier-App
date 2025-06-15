@@ -21,6 +21,10 @@
 - [Screenshots](#screenshots)
 - [Installation and Setup](#Installation-and-Setup)
 
+## About
+
+This project is a full-stack application that fetches YouTube comments for a given video, runs them through an LSTM-based sentiment/toxicity classifier, and presents the results in an intuitive frontend UI. It’s useful for content creators or moderators who want to quickly flag potentially harmful comments and understand overall sentiment.
+
 ## Features
 
 - **Comment Analysis**: Automatically fetch and analyze comments from any YouTube video
@@ -34,9 +38,8 @@
 ### Frontend
 - React + TypeScript
 - Tailwind CSS
-- Shadcn UI Components
-- Lucide Icons
 - Vite
+- Shadcn UI Components & Lucide Icons for UI ELements
 
 ### Backend
 - Python
