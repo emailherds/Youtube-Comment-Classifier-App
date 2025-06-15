@@ -2,7 +2,7 @@
   <h2 align="center">Youtube Comment Classifier</h3>
     <br />
   <a href="[htt](https://github.com/emailherds/Youtube-Comment-Classifier-App)">
-    <img src="images/classifier_1.png" alt="Logo" width="300" height="200">
+    <img src="images/youtube_logo.png" alt="Logo" width="300" height="200">
   </a>
   <br />
   <br />
