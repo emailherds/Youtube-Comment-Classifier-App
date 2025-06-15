@@ -14,7 +14,7 @@
 - [Tech Stack](#tech-stack)
 - [How it works](#how-it-works)
 - [Screenshots](#screenshots)
-- [Installation and Setup](#Installation and Setup)
+- [Installation and Setup](#Installation-and-Setup)
 
 ## Features
 
@@ -55,7 +55,7 @@
 
 </div>
 
-## 🔧 Installation and Setup
+## Installation and Setup
 
 ### Prerequisites
 - Node.js (v14+)
