@@ -1,11 +1,11 @@
 <div align="center">
-
-  # YouTube Comment Classifier
-
+  <h2 align="center">Youtube Comment Classifier</h3>
+    <br />
   <a href="[htt](https://github.com/emailherds/Youtube-Comment-Classifier-App)">
-    <img src="images/classifier_1.png" alt="Logo" width="500" height="300">
+    <img src="images/classifier_1.png" alt="Logo" width="300" height="200">
   </a>
-
+  <br />
+  <br />
 A full-stack application that analyzes YouTube comments using machine learning to classify sentiment and provide insights for content creators.
 </div>
 
