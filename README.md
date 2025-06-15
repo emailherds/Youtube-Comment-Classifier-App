@@ -14,14 +14,10 @@ A full-stack application that analyzes YouTube comments using machine learning t
 - [Demo](#demo)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
+- [Screenshots](#screenshots)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Project Structure](#project-structure)
-- [Screenshots](#screenshots)
-- [License](#license)
 
 ## 🚀 Features
 
@@ -52,6 +48,15 @@ A full-stack application that analyzes YouTube comments using machine learning t
 2. **Data Collection**: Backend fetches video metadata and comments via YouTube API
 3. **Processing**: Comments are analyzed by the LSTM model for sentiment classification
 4. **Visualization**: Results are displayed in an intuitive interface showing sentiment probabilities
+
+## Screenshots
+<div>
+      <img src="images/classifier_1.png" alt="Logo" width="600" height="400">
+    <img src="images/classifier_2.png" alt="Logo" width="600" height="400">
+    <img src="images/classifier_3.png" alt="Logo" width="600" height="400">
+    <img src="images/classifier_4.png" alt="Logo" width="600" height="400">
+
+</div>
 
 ## 🔧 Installation and Setup
 
