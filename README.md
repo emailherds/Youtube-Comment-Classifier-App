@@ -6,7 +6,7 @@
   </ul>
   
   <a href="(https://github.com/emailherds/Youtube-Comment-Classifier-App)">
-    <img src="images/Youtube_logo.png" alt="Logo" width="150" height="100">
+    <img src="frontend/public/Youtube_logo.png" alt="Logo" width="150" height="100">
   </a>
     <br />
       <br />
@@ -54,12 +54,9 @@ This project is a full-stack application that fetches YouTube comments for a giv
 3. **Processing**: Comments are analyzed by the LSTM model for sentiment classification
 4. **Visualization**: Results are displayed in an intuitive interface showing sentiment probabilities
 
-## Screenshots
+## Demo
 <div>
-      <img src="images/classifier_1.png" alt="Logo" width="700" height="400">
-    <img src="images/classifier_2.png" alt="Logo" width="700" height="400">
-    <img src="images/classifier_3.png" alt="Logo" width="700" height="400">
-    <img src="images/classifier_4.png" alt="Logo" width="700" height="400">
+      <img src="frontend/public/youtube_comment_classifier_demo.gif" alt="Logo" width="700" height="400"/>
 
 </div>
 
