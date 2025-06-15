@@ -1,5 +1,7 @@
-s<div align="center">
-  <h2 align="center">Youtube Comment Classifier</h2>
+<div align="center">
+  <h2 align="center" id="user-content">Youtube Comment Classifier</h2>
+    <br />
+  
   <a href="(https://github.com/emailherds/Youtube-Comment-Classifier-App)">
     <img src="images/Youtube_logo.png" alt="Logo" width="150" height="100">
   </a>
