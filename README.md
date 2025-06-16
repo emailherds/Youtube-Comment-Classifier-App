@@ -45,12 +45,6 @@ This application fetches YouTube comments for any youtube url, runs them through
  **Probability Visualization**  
   Render confidence scores visually next to each comment. Highlight comments exceeding a certain threshold (classifying as positve/negative), making it easy to spot high-risk comments at a glance.
 
- **Interactive UI & Filtering**  
-  Provide an intuitive interface where users can:  
-  - Search within comments by keywords  
-  - Filter comments by predicted label, confidence threshold, date posted, or like count  
-  - Sort results (e.g., highest toxicity first)  
-
 ## Demo
 <div>
       <img src="frontend/public/youtube_comment_classifier_demo.gif" alt="Logo" width="700" height="400"/>
