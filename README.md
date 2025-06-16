@@ -25,7 +25,7 @@
 
 ## About
 
-This is a full-stack application that fetches YouTube comments for any youtube url, runs them through an [LSTM-based sentiment/toxicity classifier](https://github.com/emailherds/Comment-Classifier), and presents the results in an intuitive frontend UI. It’s useful for content creators or moderators who want to quickly flag potentially harmful comments and understand overall sentiment.
+This application fetches YouTube comments for any youtube url, runs them through an [LSTM-based sentiment/toxicity classifier](https://github.com/emailherds/Comment-Classifier), and presents the results in an intuitive frontend UI. It’s useful for content creators or moderators who want to quickly flag potentially harmful comments and understand overall sentiment.
 
 ## Features
 
