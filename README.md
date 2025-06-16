@@ -1,16 +1,15 @@
-<div align="center" id="user-content-toc">
-    <ul align="center" style="list-style: none;">
-      <summary>
-      <h2 align="center">Youtube Comment Classifier</h2>
-      </summary>
-  </ul>
-  
+<div align="center" id="user-content-toc">   
+     <ul align="center" style="list-style: none;">
+          <summary>
+              <h2 align="center">Youtube Comment Classifier</h2>
+          </summary>
+      </ul
   <a href="(https://github.com/emailherds/Youtube-Comment-Classifier-App)">
     <img src="frontend/public/Youtube_logo.png" alt="Logo" width="150" height="100">
   </a>
     <br />
-      <br />
-<p>Easily find toxic comments</p>
+    <br />
+    <p>Easily find toxic comments</p>
 </div>
 
 ## Table of Contents
@@ -30,29 +29,32 @@ This is a full-stack application that fetches YouTube comments for any youtube u
 
 ## Features
 
-<details>
-  <summary><strong>Comment Retrieval</strong></summary>
-  <p>
-    • Fetch comments from any public YouTube video via the YouTube Data API.<br />
-    • Display video details on the interface.
-  </p>
-</details>
+ **Comment Retrieval**  
+  Fetch comments from any public YouTube video using the YouTube Data API. Show video metadata (title, channel name, thumbnail) alongside comments to give context.
 
-<details>
-  <summary><strong>Sentiment/Toxicity Classification</strong></summary>
-  <p>
-    • Use an bidirection LSTM model to label comments on six categories (Toxic, Obscene, Insult, Identity Hate, Threat, Severe Toxic).<br />
-    • Return confidence scores in a percentage for each category to show how sure a model is of a prediction.<br />
-  </p>
-</details>
+ **Sentiment/Toxicity Classification**  
+  Apply a bidirectional LSTM model that predicts six categories:  
+  - **Toxic**: general negative or harmful language  
+  - **Obscene**: profanity or explicit content  
+  - **Insult**: directed attacks at a person or group  
+  - **Identity Hate**: hateful language toward protected groups  
+  - **Threat**: explicit threats of violence or harm  
+  - **Severe Toxic**: extremely harmful or violent content  
+  For each comment, display a percentage confidence score for every category so users understand how certain the model is.
 
-<details>
-  <summary><strong>Interactive UI & Filtering</strong></summary>
-  <p>
-    • Intuitive interface that allows for quick retrieval of comment sentiment.<br />
-    • Enable searching within comments and filtering by label, confidence, date, or likes.<br />
-  </p>
-</details>
+ **Probability Visualization**  
+  Render confidence scores visually next to each comment. Highlight comments exceeding a certain threshold (classifying as positve/negative), making it easy to spot high-risk comments at a glance.
+
+ **Interactive UI & Filtering**  
+  Provide an intuitive interface where users can:  
+  - Search within comments by keywords  
+  - Filter comments by predicted label, confidence threshold, date posted, or like count  
+  - Sort results (e.g., highest toxicity first)  
+
+## Demo
+<div>
+      <img src="frontend/public/youtube_comment_classifier_demo.gif" alt="Logo" width="700" height="400"/>
+</div>
 
 ## Tech Stack
 
@@ -74,15 +76,10 @@ This is a full-stack application that fetches YouTube comments for any youtube u
 
 ## How It Works
 
-1. **Input**: User provides a YouTube video URL
-2. **Data Collection**: Backend fetches video metadata and comments via YouTube API
-3. **Processing**: Comments are analyzed by the LSTM model for sentiment classification
-4. **Visualization**: Results are displayed showing sentiment probabilities for each comment
-
-## Demo
-<div>
-      <img src="frontend/public/youtube_comment_classifier_demo.gif" alt="Logo" width="700" height="400"/>
-</div>
+- **Input**: User provides a YouTube video URL. <br>
+- **Data Collection**: Backend fetches video metadata and comments via YouTube API. <br>
+- **Processing**: Comments are analyzed by the LSTM model for sentiment classification. <br>
+- **Visualization**: Results are displayed showing sentiment probabilities for each comment. <br>
 
 ## Installation and Setup
 
